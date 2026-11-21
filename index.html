@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>For my Jaannn 💗</title>
+<style>
+:root{--pink:#ff6f9f;--rose:#ffd5e2;--deep:#8b3157;--cream:#fff8f7;--ink:#492b3a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;color:var(--ink);font-family:ui-rounded,"Trebuchet MS",system-ui,sans-serif;background:radial-gradient(circle at 15% 15%,#fff 0 8%,transparent 28%),linear-gradient(145deg,#ffe8ef,#fff4ef 55%,#fce0eb);overflow-x:hidden}
+.floats{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}.float{position:absolute;bottom:-50px;opacity:.55;animation:rise linear infinite;font-size:20px}@keyframes rise{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+main{position:relative;z-index:1;width:min(760px,92vw);margin:0 auto;padding:36px 0 60px}.hero,.panel{background:#ffffffd9;border:1px solid #fff;box-shadow:0 18px 55px #9f47651a;border-radius:28px;padding:clamp(22px,5vw,42px);backdrop-filter:blur(10px)}.hero{text-align:center;margin:8vh 0 22px}.eyebrow{letter-spacing:.18em;text-transform:uppercase;color:#c05b82;font-size:.75rem;font-weight:800}.hero h1{font-family:Georgia,serif;font-size:clamp(2.5rem,9vw,5rem);line-height:.98;margin:15px 0;color:#a83e6a}.hero p{font-size:1.05rem;line-height:1.7;max-width:530px;margin:18px auto;color:#765164}.heart{font-size:2.2rem;display:inline-block;animation:beat 1.15s infinite}@keyframes beat{50%{transform:scale(1.2)}}button{border:0;border-radius:999px;padding:14px 21px;background:linear-gradient(135deg,#ff79a5,#e95088);color:white;font-weight:800;font-size:1rem;cursor:pointer;box-shadow:0 9px 20px #e9508830;transition:.2s}button:hover{transform:translateY(-2px)}button.secondary{background:#fff0f5;color:#a83e6a;box-shadow:none;border:1px solid #ffd0df}.panel{margin:18px 0}.panel h2{font-family:Georgia,serif;color:#a83e6a;font-size:clamp(1.7rem,5vw,2.4rem);margin:0 0 12px}.muted{color:#876879;line-height:1.7}.hidden{display:none!important}.giftgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}.gift{min-height:130px;border:1px solid #ffd5e2;background:#fff7fa;border-radius:20px;padding:16px 10px;color:#9f4268;box-shadow:none}.gift span{display:block;font-size:2rem;margin-bottom:8px}.reveal{margin-top:16px;padding:18px;border-radius:18px;background:#fff1f6;border:1px dashed #f3a6c0;line-height:1.8;animation:pop .35s ease}@keyframes pop{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}.letter{font-family:Georgia,serif;font-size:1.12rem;line-height:1.95;white-space:pre-line;color:#634052}.memory{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}.memory div{background:#fff4f7;padding:18px;border-radius:18px;line-height:1.65}.memory b{color:#a83e6a}.cake{font-size:4.5rem;text-align:center;margin:10px}.footer{text-align:center;color:#a36a82;font-size:.85rem;margin-top:24px}.progress{height:7px;background:#ffe0e9;border-radius:20px;overflow:hidden;margin:18px 0}.progress i{display:block;height:100%;width:0;background:#ed6d9a;transition:width .5s}.spark{position:fixed;pointer-events:none;z-index:5;font-size:20px;animation:burst 1.1s ease-out forwards}@keyframes burst{to{transform:translate(var(--x),var(--y)) rotate(220deg) scale(.2);opacity:0}}
+@media(max-width:560px){.giftgrid{grid-template-columns:1fr}.gift{min-height:90px}.memory{grid-template-columns:1fr}.hero{margin-top:4vh}}
+</style></head>
+<body><div class="floats" id="floats"></div>
+<main>
+<section class="hero">
+ <div class="eyebrow">a tiny little world made just for you</div>
+ <div class="heart">💗</div>
+ <h1>Happy Birthday,<br>meri Jaannn</h1>
+ <p>I made you a little something. No rushing, okay? Open everything… there are a few surprises waiting for you. 🥹</p>
+ <button onclick="startSurprise()">Open your birthday surprise ✨</button>
+</section>
+<section class="panel hidden" id="welcome">
+ <div class="eyebrow">chapter one</div><h2>Today is all about you.</h2>
+ <p class="muted">And because one birthday message is obviously not enough, I hid a few little things for you. Tap each gift. 💌</p>
+ <div class="progress"><i id="bar"></i></div><p class="muted" id="count">0 of 3 surprises opened</p>
+ <div class="giftgrid">
+  <button class="gift" onclick="openGift(1)"><span>🎁</span> A little reminder</button>
+  <button class="gift" onclick="openGift(2)"><span>🫶</span> Something I love</button>
+  <button class="gift" onclick="openGift(3)"><span>💌</span> One promise</button>
+ </div>
+ <div id="gift1" class="reveal hidden">I hope you never forget how loved you are. Not just today, not just when everything is easy. On the ordinary days too. Especially then. 💗</div>
+ <div id="gift2" class="reveal hidden">I love how when I'm struggling and I start pushing people away, you somehow come closer instead of leaving. You make me feel like I don't have to figure everything out alone. That's rare, and I never take it for granted.</div>
+ <div id="gift3" class="reveal hidden">I promise to keep choosing the little things: checking in, listening properly, making you laugh, and reminding you that you're my favourite person. Even on the days when I'm not the best at saying it.</div>
+</section>
+<section class="panel hidden" id="letterPanel">
+ <div class="eyebrow">chapter two · a note from me</div><h2>For my favourite girl</h2>
+ <div class="letter">Happy birthday meri jaannn. ❤️
+
+I hope this year gives u all the happiness you've quietly wished for and so much more. I hope u get to experience the kind of love and peace that makes everything feel a little lighter.
+
+I know I don't always have the perfect words, but I hope u know how much u mean to me. I love how u show up for me, especially when I'm struggling and my first instinct is to push everyone away. U somehow find a way to come closer and be there for me. I don't think u realise how much that means.
+
+And one thing I'll always remember is that first ever question u asked me about those five minutes. My answer would still be yes. Every single time. 🥹
+
+I hope today makes u feel as special as u really are. Keep smiling, keep being your lovely self, and never doubt how much u are appreciated.
+
+I love you meri jaannn. Have the prettiest birthday. 💗</div>
+</section>
+<section class="panel hidden" id="memories">
+ <div class="eyebrow">chapter three</div><h2>Little things I'll keep close</h2>
+ <div class="memory"><div>🌷<br><b>Your presence</b><br>How even a normal day feels better when you're in it.</div><div>🧸<br><b>Your softness</b><br>The way you care, even when you have your own things going on.</div><div>🌙<br><b>Your comfort</b><br>Knowing I can be a mess sometimes and still feel understood.</div><div>💞<br><b>Our little moments</b><br>The random talks, the laughs, and all the memories still waiting for us.</div></div>
+</section>
+<section class="panel hidden" id="final">
+ <div class="eyebrow">the last surprise</div><div class="cake">🎂</div><h2 style="text-align:center">Make a wish, birthday girl.</h2>
+ <p class="muted" style="text-align:center">Close your eyes for a second. I hope this next year is gentle with you, exciting for you, and full of reasons to smile.</p>
+ <div style="text-align:center;margin-top:20px"><button onclick="wish()">I made my wish ✨</button><div id="wishText" class="reveal hidden">Okay now it has to come true. That's the rule. I love youuu. 💗</div></div>
+</section>
+<div class="footer">made with a lot of love, just for you · 💗</div>
+</main>
+<script>
+const floatBox=document.getElementById('floats');for(let i=0;i<18;i++){let e=document.createElement('span');e.className='float';e.textContent=['♡','✦','💗','✿'][i%4];e.style.left=(Math.random()*100)+'%';e.style.animationDuration=(9+Math.random()*10)+'s';e.style.animationDelay=(-Math.random()*15)+'s';e.style.fontSize=(14+Math.random()*18)+'px';floatBox.appendChild(e)}
+function startSurprise(){document.getElementById('welcome').classList.remove('hidden');document.getElementById('welcome').scrollIntoView({behavior:'smooth'});confetti()}
+let opened=new Set();function openGift(n){document.getElementById('gift'+n).classList.remove('hidden');opened.add(n);document.getElementById('count').textContent=opened.size+' of 3 surprises opened';document.getElementById('bar').style.width=(opened.size/3*100)+'%';if(opened.size===3){setTimeout(()=>{document.getElementById('letterPanel').classList.remove('hidden');document.getElementById('memories').classList.remove('hidden');document.getElementById('final').classList.remove('hidden');confetti();},450)}}
+function wish(){document.getElementById('wishText').classList.remove('hidden');confetti()}
+function confetti(){let chars=['💗','✨','🌸','💕','✦'];for(let i=0;i<24;i++){let e=document.createElement('span');e.className='spark';e.textContent=chars[i%chars.length];e.style.left=(45+Math.random()*10)+'vw';e.style.top=(35+Math.random()*25)+'vh';e.style.setProperty('--x',((Math.random()-.5)*420)+'px');e.style.setProperty('--y',(-80-Math.random()*300)+'px');document.body.appendChild(e);setTimeout(()=>e.remove(),1200)}}
+</script></body></html>
